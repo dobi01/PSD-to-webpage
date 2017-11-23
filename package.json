@@ -1,0 +1,39 @@
+{
+  "name": "Zadanie-7.5",
+  "version": "1.0.0",
+  "description": "test test test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:html",
+    "test:html": "glob-run nu-html-checker *.html",
+
+    "build": "npm run build:rimraf && npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build:rimraf": "rimraf css/*.css",
+    "build:sass": "sass --update --force --sourcemap=none sass:css",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+
+    "watch": "parallelshell \"npm run watch:sassprefixer\" \"npm run watch:browser-sync\" ",
+    "watch:sassprefixer": "onchange sass/*.scss -- npm run build:sass && -- autoprefixer-cli css/style.css",
+    "watch:browser-sync": "browser-sync start --server --files \"css/*.css\" \"*.html\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobi01/Zadanie-7.5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobi01/Zadanie-7.5/issues"
+  },
+  "homepage": "https://github.com/dobi01/Zadanie-7.5#readme",
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.18.13",
+    "glob-run": "^0.1.6",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^2.6.2"
+  }
+}
