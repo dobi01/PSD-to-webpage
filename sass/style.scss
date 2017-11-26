@@ -1,9 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,500,700');
 
+$white: #fff;
+$black: #3c3c3c;
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  border: none;
-  display: flex;
+  // border: 1px solid red !important;
+  font-family: 'Lato', sans-serif !important;
+  text-align: center;
+}
+
+.container {
+  width: 900px;
+}
+
+body {
+  background-color: $white;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: absolute;
+  top: -40px;
+  left: 250px;
+  background-color: $white;
+  padding: 0 108px;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background: url(/images/header.jpg) no-repeat center / cover;
+  height: 100vh;
+  color: $white;
+  .container {
+    margin-top: 30vh;
+    h1 {
+      letter-spacing: 8px;
+      font-size: 54px;
+      margin-bottom: 54px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 29px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* ABOUT US */
+
+.about-us {
+  color: $black;
+  height: 630px - 230px;
+  .container {
+    border: 2px solid $black;
+    padding: 0 175px 0;
+    margin: 160px auto;
+    position: relative;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+    p:first-of-type {
+      margin-bottom: 20px;
+      margin-top: 60px;
+    }
+  }
+}
+
+/* SERVICES */
+
+.services {
+  background: url(/images/services.jpg) no-repeat center / cover;
+  height: 448px;
+  color: $white;
+  .container {
+    border: 2px solid $white;
+    padding: 0 175px 0;
+    margin: 60px auto !important;
+    position: relative;
+    top: 80px;
+    h2 {
+      background: url(/images/services.jpg) no-repeat center;;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 50px;
+      margin-top: 60px;
+    }
+  }
+}
+
+/* WHAT WE DO */
+
+.what-we-do {
+  color: $black;
+  .container {
+    border: 2px solid $black;
+    padding: 0 175px 0;
+    margin: 160px auto;
+    position: relative;
+    h2 {
+      left: 220px;
+      padding: 0 88px;
+    }
+    .first {
+      margin-top: 140px;
+    }
+    img {
+      margin-top: 30px;
+    }
+    h3 {
+      font-size: 20px;
+      letter-spacing: 4px;
+      font-weight: bold;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 300;
+      margin-bottom: 90px;
+    }
+  }
 }
