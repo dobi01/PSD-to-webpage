@@ -1,5 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,500,700");
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  border: none; }
+  font-family: 'Lato', sans-serif !important;
+  text-align: center; }
+
+.container {
+  width: 900px; }
+
+body {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: absolute;
+  top: -40px;
+  left: 250px;
+  background-color: #fff;
+  padding: 0 108px; }
+
+/* JUMBOTRON */
+.jumbotron {
+  background: url(images/header.jpg) no-repeat center/cover;
+  height: 100vh;
+  color: #fff; }
+  .jumbotron .container {
+    margin-top: 30vh; }
+    .jumbotron .container h1 {
+      letter-spacing: 8px;
+      font-size: 54px;
+      margin-bottom: 54px;
+      font-weight: 500; }
+    .jumbotron .container p {
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 29px;
+      text-transform: uppercase; }
+
+/* ABOUT US */
+.about-us {
+  color: #3c3c3c;
+  height: 400px; }
+  .about-us .container {
+    border: 2px solid #3c3c3c;
+    padding: 0 175px 0;
+    margin: 160px auto;
+    position: relative; }
+    .about-us .container p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 50px; }
+    .about-us .container p:first-of-type {
+      margin-bottom: 20px;
+      margin-top: 60px; }
+
+/* SERVICES */
+.services {
+  background: url(images/services.jpg) no-repeat center/cover;
+  height: 448px;
+  color: #fff; }
+  .services .container {
+    border: 2px solid #fff;
+    padding: 0 175px 0;
+    margin: 60px auto !important;
+    position: relative;
+    top: 80px; }
+    .services .container h2 {
+      background: url(images/services.jpg) no-repeat center; }
+    .services .container p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 50px;
+      margin-top: 60px; }
+
+/* WHAT WE DO */
+.what-we-do {
+  color: #3c3c3c; }
+  .what-we-do .container {
+    border: 2px solid #3c3c3c;
+    padding: 0 175px 0;
+    margin: 160px auto;
+    position: relative; }
+    .what-we-do .container h2 {
+      left: 260px;
+      padding: 0 70px; }
+    .what-we-do .container .first {
+      margin-top: 140px; }
+    .what-we-do .container img {
+      margin-top: 30px; }
+    .what-we-do .container h3 {
+      font-size: 20px;
+      letter-spacing: 4px;
+      font-weight: bold;
+      padding-top: 20px;
+      padding-bottom: 15px; }
+    .what-we-do .container p {
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 300;
+      margin-bottom: 90px; }
