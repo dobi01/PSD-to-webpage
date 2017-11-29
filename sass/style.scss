@@ -34,7 +34,7 @@ h2 {
 /* JUMBOTRON */
 
 .jumbotron {
-  background: url(/images/header.jpg) no-repeat center / cover;
+  background: url("../images/header.jpg") no-repeat center / cover;
   height: 100vh;
   color: $white;
   .container {
@@ -80,7 +80,7 @@ h2 {
 /* SERVICES */
 
 .services {
-  background: url(/images/services.jpg) no-repeat center / cover;
+  background: url("../images/services.jpg") no-repeat center / cover;
   height: 448px;
   color: $white;
   .container {
@@ -90,7 +90,7 @@ h2 {
     position: relative;
     top: 80px;
     h2 {
-      background: url(/images/services.jpg) no-repeat center;;
+      background: url("../images/services.jpg") no-repeat center;;
     }
     p {
       font-size: 16px;
