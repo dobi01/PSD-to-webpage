@@ -29,6 +29,13 @@ h2 {
   left: 250px;
   background-color: $white;
   padding: 0 108px;
+  @media (max-width: 991px) {
+    font-size: 26px;
+    position: static;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 /* JUMBOTRON */
@@ -44,12 +51,20 @@ h2 {
       font-size: 54px;
       margin-bottom: 54px;
       font-weight: 500;
+      @media (max-width: 700px) {
+        font-size: 34px;
+        margin-bottom: 30px;
+      }
     }
     p {
       font-size: 15px;
       letter-spacing: 1px;
       line-height: 29px;
       text-transform: uppercase;
+      @media (max-width: 700px) {
+        font-size: 13px;
+        line-height: 22px;
+      }
     }
   }
 }
@@ -59,20 +74,38 @@ h2 {
 .about-us {
   color: $black;
   height: 630px - 230px;
+  @media (max-width: 991px) {
+    height: 100%;
+  }
   .container {
     border: 2px solid $black;
     padding: 0 175px 0;
     margin: 160px auto;
     position: relative;
+    @media (max-width: 991px) {
+      border: none;
+      width: 100%;
+      padding: 0 50px;
+      margin: 50px auto 0;
+    }
     p {
       font-size: 16px;
       line-height: 24px;
       font-weight: 300;
       margin-bottom: 50px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: left;
+      }
     }
     p:first-of-type {
       margin-bottom: 20px;
       margin-top: 60px;
+      @media (max-width: 991px) {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -83,14 +116,45 @@ h2 {
   background: url("../images/services.jpg") no-repeat center / cover;
   height: 448px;
   color: $white;
+  @media (max-width: 991px) {
+    height: 100%;
+  }
   .container {
     border: 2px solid $white;
+    border-top: none;
     padding: 0 175px 0;
     margin: 60px auto !important;
     position: relative;
     top: 80px;
+    @media (max-width: 991px) {
+      border: none;
+      width: 100%;
+      padding: 0 50px;
+      margin: 50px auto 0;
+    }
     h2 {
-      background: url("../images/services.jpg") no-repeat center;
+      overflow: hidden;
+      left: 0;
+      padding: 0;
+      background-color: inherit;
+    }
+    h2::before, h2::after {
+      content: "";
+      vertical-align: top;
+      display: inline-block;
+      width: 250px;
+      height: .6em;
+      border-bottom: 2px solid #fff;
+      margin: 0 100px 0 0;
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    h2::after {
+      margin: 0 0 0 100px;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
     p {
       font-size: 16px;
@@ -98,6 +162,14 @@ h2 {
       font-weight: 300;
       margin-bottom: 50px;
       margin-top: 60px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: left;
+        padding-bottom: 50px;
+      }
     }
   }
 }
@@ -106,20 +178,39 @@ h2 {
 
 .what-we-do {
   color: $black;
+  @media (max-width: 991px) {
+    height: 100%;
+  }
   .container {
     border: 2px solid $black;
     padding: 0 175px 0;
     margin: 160px auto;
     position: relative;
+    @media (max-width: 991px) {
+      border: none;
+      width: 100%;
+      padding: 0 50px;
+      margin: 50px auto 0;
+    }
     h2 {
       left: 260px;
       padding: 0 70px;
+      @media (max-width: 991px) {
+        padding: 0;
+        text-align: center;
+      }
     }
     .first {
       margin-top: 140px;
+      @media (max-width: 991px) {
+        margin-top: 40px;
+      }
     }
     img {
       margin-top: 30px;
+      @media (max-width: 991px) {
+        height: 50px;
+      }
     }
     h3 {
       font-size: 20px;
@@ -127,12 +218,22 @@ h2 {
       font-weight: bold;
       padding-top: 20px;
       padding-bottom: 15px;
+      @media (max-width: 991px) {
+        padding-top: 0;
+      }
     }
     p {
       font-size: 14px;
       line-height: 26px;
       font-weight: 300;
       margin-bottom: 90px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-bottom: 50px;
+      }
     }
   }
 }
@@ -141,9 +242,18 @@ h2 {
 
 .gallery {
   overflow: hidden;
+  @media (max-width: 991px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .row {
     height: 237px;
     width: 100vw;
+    .pad {
+      @media (max-width: 991px) {
+        padding-left: 10px;
+      }
+    }
     [class^="col-"] {
       padding: 0 10px 10px 0;
       position: relative;
@@ -181,10 +291,16 @@ h2 {
         font-size: 34px;
         letter-spacing: 6px;
         font-weight: bold;
+        @media (max-width: 991px) {
+          font-size: 26px;
+        }
       }
     }
     .last {
       padding-right: 0;
+      @media (max-width: 991px) {
+        padding-right: 10px;
+      }
     }
   }
 }
@@ -194,14 +310,26 @@ h2 {
 .contact-us {
   color: $black;
   height: 630px - 230px - 40px;
+  @media (max-width: 991px) {
+    height: 100%;
+  }
   .container {
     border: 2px solid $black;
     padding: 0 175px 0;
     margin: 160px auto;
     position: relative;
+    @media (max-width: 991px) {
+      border: none;
+      width: 100%;
+      padding: 0 50px;
+      margin: 50px auto 0;
+    }
     h2 {
       left: 240px;
       padding: 0 80px;
+      @media (max-width: 991px) {
+        padding: 0;
+      }
     }
     p {
       font-size: 16px;
@@ -209,6 +337,14 @@ h2 {
       font-weight: 300;
       margin-bottom: 42px;
       margin-top: 60px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: left;
+        padding-bottom: 50px;
+      }
     }
     button {
       background-color: $black;
@@ -220,6 +356,9 @@ h2 {
       font-weight: 500;
       letter-spacing: 3px;
       margin-bottom: 50px;
+      @media (max-width: 991px) {
+        width: 180px;
+        }
     }
   }
 }
@@ -229,4 +368,10 @@ h2 {
 span {
   margin-left: 14px;
   font-size: 14px;
+}
+
+footer {
+  @media (max-width: 991px) {
+    margin-bottom: 20px;
+  }
 }
