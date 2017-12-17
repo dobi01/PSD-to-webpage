@@ -90,7 +90,7 @@ h2 {
     position: relative;
     top: 80px;
     h2 {
-      background: url("../images/services.jpg") no-repeat center;;
+      background: url("../images/services.jpg") no-repeat center;
     }
     p {
       font-size: 16px;
@@ -135,4 +135,98 @@ h2 {
       margin-bottom: 90px;
     }
   }
+}
+
+/* GALLERY */
+
+.gallery {
+  overflow: hidden;
+  .row {
+    height: 237px;
+    width: 100vw;
+    [class^="col-"] {
+      padding: 0 10px 10px 0;
+      position: relative;
+      [id^="img-"] {
+        height: 237px;
+        width: 100%;
+      }
+      #img-1 {
+        background: url("../images/works-1.jpg") no-repeat center / cover;
+      }
+      #img-2 {
+        background: url("../images/works-2.jpg") no-repeat center / cover;
+      }
+      #img-3 {
+        background: url("../images/works-3.jpg") no-repeat center / cover;
+      }
+      #img-4 {
+        background: url("../images/works-4.jpg") no-repeat center / cover;
+      }
+      #img-5 {
+        background: url("../images/works-5.jpg") no-repeat center / cover;
+      }
+      #img-6 {
+        background: url("../images/works-6.jpg") no-repeat center / cover;
+      }
+      [id^="img-"]:hover {
+        opacity: .7;
+        cursor: pointer;
+      }
+      h3 {
+        position: absolute;
+        bottom: 42px;
+        left: 47px;
+        color: $white;
+        font-size: 34px;
+        letter-spacing: 6px;
+        font-weight: bold;
+      }
+    }
+    .last {
+      padding-right: 0;
+    }
+  }
+}
+
+/* CONTACT US */
+
+.contact-us {
+  color: $black;
+  height: 630px - 230px - 40px;
+  .container {
+    border: 2px solid $black;
+    padding: 0 175px 0;
+    margin: 160px auto;
+    position: relative;
+    h2 {
+      left: 240px;
+      padding: 0 80px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300;
+      margin-bottom: 42px;
+      margin-top: 60px;
+    }
+    button {
+      background-color: $black;
+      color: $white;
+      border: none;
+      height: 58px;
+      width: 395px;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* FOOTER */
+
+span {
+  margin-left: 14px;
+  font-size: 14px;
 }

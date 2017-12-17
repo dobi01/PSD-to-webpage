@@ -104,3 +104,77 @@ h2 {
       line-height: 26px;
       font-weight: 300;
       margin-bottom: 90px; }
+
+/* GALLERY */
+.gallery {
+  overflow: hidden; }
+  .gallery .row {
+    height: 237px;
+    width: 100vw; }
+    .gallery .row [class^="col-"] {
+      padding: 0 10px 10px 0;
+      position: relative; }
+      .gallery .row [class^="col-"] [id^="img-"] {
+        height: 237px;
+        width: 100%; }
+      .gallery .row [class^="col-"] #img-1 {
+        background: url("../images/works-1.jpg") no-repeat center/cover; }
+      .gallery .row [class^="col-"] #img-2 {
+        background: url("../images/works-2.jpg") no-repeat center/cover; }
+      .gallery .row [class^="col-"] #img-3 {
+        background: url("../images/works-3.jpg") no-repeat center/cover; }
+      .gallery .row [class^="col-"] #img-4 {
+        background: url("../images/works-4.jpg") no-repeat center/cover; }
+      .gallery .row [class^="col-"] #img-5 {
+        background: url("../images/works-5.jpg") no-repeat center/cover; }
+      .gallery .row [class^="col-"] #img-6 {
+        background: url("../images/works-6.jpg") no-repeat center/cover; }
+      .gallery .row [class^="col-"] [id^="img-"]:hover {
+        opacity: .7;
+        cursor: pointer; }
+      .gallery .row [class^="col-"] h3 {
+        position: absolute;
+        bottom: 42px;
+        left: 47px;
+        color: #fff;
+        font-size: 34px;
+        letter-spacing: 6px;
+        font-weight: bold; }
+    .gallery .row .last {
+      padding-right: 0; }
+
+/* CONTACT US */
+.contact-us {
+  color: #3c3c3c;
+  height: 360px; }
+  .contact-us .container {
+    border: 2px solid #3c3c3c;
+    padding: 0 175px 0;
+    margin: 160px auto;
+    position: relative; }
+    .contact-us .container h2 {
+      left: 240px;
+      padding: 0 80px; }
+    .contact-us .container p {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300;
+      margin-bottom: 42px;
+      margin-top: 60px; }
+    .contact-us .container button {
+      background-color: #3c3c3c;
+      color: #fff;
+      border: none;
+      height: 58px;
+      width: 395px;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      margin-bottom: 50px; }
+
+/* FOOTER */
+span {
+  margin-left: 14px;
+  font-size: 14px; }
+
+/*# sourceMappingURL=style.css.map */
