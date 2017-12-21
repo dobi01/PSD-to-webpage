@@ -26,7 +26,7 @@ h2 {
   letter-spacing: 5px;
   position: absolute;
   top: -40px;
-  left: 250px;
+  left: 240px;
   background-color: $white;
   padding: 0 108px;
   @media (max-width: 991px) {
@@ -125,7 +125,7 @@ h2 {
     padding: 0 175px 0;
     margin: 60px auto !important;
     position: relative;
-    top: 80px;
+    top: 85px;
     @media (max-width: 991px) {
       border: none;
       width: 100%;
@@ -133,8 +133,7 @@ h2 {
       margin: 50px auto 0;
     }
     h2 {
-      overflow: hidden;
-      left: 0;
+      left: 360px;
       padding: 0;
       background-color: inherit;
     }
@@ -145,13 +144,14 @@ h2 {
       width: 250px;
       height: .6em;
       border-bottom: 2px solid #fff;
-      margin: 0 100px 0 0;
+      left: -362px;
+      position: absolute;
       @media (max-width: 991px) {
         display: none;
       }
     }
     h2::after {
-      margin: 0 0 0 100px;
+      left: 288px;
       @media (max-width: 991px) {
         display: none;
       }
@@ -193,7 +193,7 @@ h2 {
       margin: 50px auto 0;
     }
     h2 {
-      left: 260px;
+      left: 250px;
       padding: 0 70px;
       @media (max-width: 991px) {
         padding: 0;
