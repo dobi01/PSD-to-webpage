@@ -18,7 +18,7 @@ h2 {
   letter-spacing: 5px;
   position: absolute;
   top: -40px;
-  left: 250px;
+  left: 240px;
   background-color: #fff;
   padding: 0 108px; }
   @media (max-width: 991px) {
@@ -105,7 +105,7 @@ h2 {
     padding: 0 175px 0;
     margin: 60px auto !important;
     position: relative;
-    top: 80px; }
+    top: 85px; }
     @media (max-width: 991px) {
       .services .container {
         border: none;
@@ -114,7 +114,7 @@ h2 {
         margin: 50px auto 0; } }
     .services .container h2 {
       left: 0;
-      padding: 0;
+      width: 100%;
       background-color: inherit; }
     .services .container h2::before, .services .container h2::after {
       content: "";
@@ -123,13 +123,13 @@ h2 {
       width: 250px;
       height: .6em;
       border-bottom: 2px solid #fff;
-      left: -2px;
       position: absolute; }
       @media (max-width: 991px) {
         .services .container h2::before, .services .container h2::after {
           display: none; } }
+    .services .container h2::before {
+      left: -2px; }
     .services .container h2::after {
-      position: absolute;
       right: -2px; }
       @media (max-width: 991px) {
         .services .container h2::after {
@@ -167,7 +167,7 @@ h2 {
         padding: 0 50px;
         margin: 50px auto 0; } }
     .what-we-do .container h2 {
-      left: 260px;
+      left: 250px;
       padding: 0 70px; }
       @media (max-width: 991px) {
         .what-we-do .container h2 {
